@@ -19,7 +19,7 @@ drupal_add_library('system', 'ui.widget');
 drupal_add_library('system', 'ui.dialog');
 drupal_add_library('system', 'ui.tooltip');
 
-drupal_add_css('includes/css/metadata.css',array('type'=>'external'));
+drupal_add_css('metadata-editor/includes/css/metadata.css',array('type'=>'external'));
 drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js',array('type'=>'external'));
 //drupal_add_css('misc/ui/jquery.ui.button.css');
 //drupal_add_css('misc/ui/jquery.ui.datepicker.css');
@@ -30,8 +30,8 @@ drupal_add_js('//cdn.jsdelivr.net/openlayers/2.13.1/OpenLayers.js',array('type'=
 
 drupal_add_js('//maps.google.com/maps/api/js?v=3&sensor=false&key='.$config['google_maps_api_key'],array('type'=>'external'));
 
-drupal_add_js('/includes/geoviz/geoviz.js',array('type'=>'external'));
-drupal_add_js('/includes/geoviz/mapWizard.js',array('type'=>'external'));
+drupal_add_js('/metadata-editor/includes/geoviz/geoviz.js',array('type'=>'external'));
+drupal_add_js('/metadata-editor/includes/geoviz/mapWizard.js',array('type'=>'external'));
 
 if (array_key_exists('action',$_GET) and $_GET['action'] == 'help') {
     require 'help.html';
