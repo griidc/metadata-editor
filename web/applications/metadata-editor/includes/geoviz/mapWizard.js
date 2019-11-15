@@ -86,7 +86,7 @@ function MapWizard(json)
         $('#'+json.descField).hide().prop('disabled',true); 
         
         $.ajax({
-            url: '/includes/geoviz/wizard_dialog.html',
+            url: 'includes/geoviz/wizard_dialog.html',
             success: function(html) {
                 $(document.body).append('<div id="divMapWizard">'+html+'</div>');
             },
