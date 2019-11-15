@@ -129,7 +129,7 @@ function MapWizard(json)
     {
         //Synchonous load of HTML, then append to DIV
         $.ajax({
-            url:    '/includes/geoviz/wizard_map.html',
+            url:    'includes/geoviz/wizard_map.html',
             success: function(html) {
                 $("#divMapWizard").append(html);
             },
